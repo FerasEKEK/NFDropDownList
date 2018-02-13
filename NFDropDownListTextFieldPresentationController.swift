@@ -14,11 +14,11 @@ class NFDropDownListTextFieldPresentationController: UIPresentationController {
     var cornerRadius: CGFloat = 5
     override func presentationTransitionWillBegin() {
         dimmingView.backgroundColor = UIColor.clear
-        let touchHandler = UITapGestureRecognizer(target: self, action: #selector(self.tapHandler(_:)))
+        let touchHandler = UITapGestureRecognizer(target: self, action: #selector(tapHandler(_:)))
         dimmingView.addGestureRecognizer(touchHandler)
         self.containerView!.addSubview(dimmingView)
     }
-    func tapHandler(_ gesture:UIGestureRecognizer) {
+    @objc func tapHandler(_ gesture:UIGestureRecognizer) {
         self.presentedViewController.dismiss(animated: true, completion: nil)
     }
 
