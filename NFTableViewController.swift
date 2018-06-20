@@ -1,6 +1,6 @@
 //
 //  NFTableViewController.swift
-//  VIPRescue
+//  NFDropDownList
 //
 //  Created by Firas Al Khatib Al Khalidi on 9/9/16.
 //  Copyright © 2016 Firas Al Khatib Al Khalidi. All rights reserved.
